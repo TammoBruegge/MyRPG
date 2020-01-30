@@ -64,6 +64,7 @@ public class Game implements Runnable {
 		g.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);;
 		
 		
+		
 		//Spieler teleportieren
 		player.setEntityX(100);
 		player.setEntityY(100);
@@ -91,6 +92,7 @@ public class Game implements Runnable {
 		paths[1] = "/level/level2a.txt";
 		paths[2] = "/level/level2b.txt";
 		level = new Level(this, paths, tileSet);
+		player.setLevel(level);
 	}
 
 	
