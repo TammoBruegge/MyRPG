@@ -20,7 +20,6 @@ public class Game implements Runnable {
 	private Camera gameCamera;
 	BufferStrategy bs;
 	Graphics g;
-	Canvas c;
 	
 	private boolean level1Aktiv;
 	private boolean level2Aktiv;
@@ -62,9 +61,7 @@ public class Game implements Runnable {
 	public void level2() {
 		level1Aktiv = false;
 		level2Aktiv = true;
-		g.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-		g.dispose();
-		render();
+		g.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);;
 		
 		
 		//Spieler teleportieren
@@ -151,7 +148,7 @@ public class Game implements Runnable {
 		player.update();
 	}
 	void render() {
-		  c = screen.getCanvas();
+		  Canvas c = screen.getCanvas();
 		  bs = c.getBufferStrategy();
 		  if(bs == null){
 		    screen.getCanvas().createBufferStrategy(3);
