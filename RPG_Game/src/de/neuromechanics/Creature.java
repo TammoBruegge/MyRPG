@@ -19,11 +19,10 @@ public abstract class Creature extends Entity {
     xMove = 0;
     yMove = 0;
   }
-  
-  public void setLevel(level l) {
+  public void setLevel(Level l) {
 	  this.level = l;
   }
-
+  
   int op = 1;
   int slow = 0;
   int xPos = 0;

@@ -56,13 +56,13 @@ public class Game implements Runnable {
 		paths[1] = "/level/level1a.txt";
 		paths[2] = "/level/level1b.txt";
 		level = new Level(this, paths, tileSet);
+
 	}
 	
 	public void level2() {
 		level1Aktiv = false;
 		level2Aktiv = true;
 		g.clearRect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);;
-		
 		
 		
 		//Spieler teleportieren
